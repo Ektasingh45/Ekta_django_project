@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Search</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Heading and description -->
+        <h1 class="title">Wikipedia Search</h1>
+        <p class="subtitle">
+            Type any topic below and get a short summary from Wikipedia.
+        </p>
+
+        <!-- Search form -->
+        <form method="POST" class="search-form">
+            {% csrf_token %}
+            <input
+                type="text"
+                name="search"
+                class="search-input"
+                placeholder="e.g. Python, India, Machine Learning"
+                value="{{ search|default:'' }}"
+            >
+            <button type="submit" class="search-button">Search</button>
+        </form>
+
+        <!-- Error message -->
+        {% if error %}
+            <div class="error-box">
+                {{ error }}
+            </div>
+        {% endif %}
+
+        <!-- Search result -->
+        {% if result %}
+            <div class="result-box">
+                <h2 class="result-title">{{ title }}</h2>
+                <p class="result-text">{{ result }}</p>
+                <p class="result-source">Source: Wikipedia</p>
+            </div>
+        {% endif %}
+
+    </div>
+
+    <footer class="footer">
+        Wikipedia Search App &middot; Made with Django
+    </footer>
+
+</body>
+</html>

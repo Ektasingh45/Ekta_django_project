@@ -1,0 +1,129 @@
+/* ---------- Page ---------- */
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background: #eef2f7;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+/* ---------- Main card ---------- */
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 35px 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    margin: 0 0 10px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    text-align: center;
+    color: #1f3b5c;
+}
+
+.subtitle {
+    margin: 0 0 25px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #666666;
+}
+
+/* ---------- Search form ---------- */
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px 14px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #3366cc;
+}
+
+.search-button {
+    padding: 12px 22px;
+    font-size: 16px;
+    color: #ffffff;
+    background: #3366cc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background: #254f9e;
+}
+
+/* ---------- Error message ---------- */
+.error-box {
+    margin-top: 25px;
+    padding: 14px 16px;
+    background: #fdecea;
+    color: #a12b2b;
+    border: 1px solid #f5c2c0;
+    border-radius: 8px;
+}
+
+/* ---------- Result card ---------- */
+.result-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8fafc;
+    border-left: 5px solid #3366cc;
+    border-radius: 8px;
+}
+
+.result-title {
+    margin: 0 0 10px 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 24px;
+    color: #1f3b5c;
+}
+
+.result-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.result-source {
+    margin: 15px 0 0 0;
+    font-size: 13px;
+    color: #888888;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    margin-top: 25px;
+    font-size: 14px;
+    text-align: center;
+    color: #888888;
+}
+
+/* ---------- Small screens (mobile) ---------- */
+@media (max-width: 500px) {
+    .search-form {
+        display: block;
+    }
+
+    .search-input,
+    .search-button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .search-button {
+        margin-top: 10px;
+    }
+}
