@@ -21,6 +21,32 @@ A simple web application built with Django where the user types a topic into a s
 - HTML
 - CSS
 
+## Screenshots
+
+### Home Page
+
+The search page as it first loads.
+
+![Home page](screenshots/home.png)
+
+### Search Result
+
+Searching for "Taj Mahal" shows a 3-sentence summary from Wikipedia in a result card.
+
+![Search result](screenshots/result.png)
+
+### Error Message
+
+Searching for a topic that doesn't exist shows an error message.
+
+![Error message](screenshots/error.png)
+
+### Mobile View
+
+On small screens, the Search button moves below the text box.
+
+<img src="screenshots/mobile.png" alt="Mobile view" width="300">
+
 ## Project Structure
 
 ```text
@@ -39,13 +65,15 @@ wikipedia_app/
 ├── static/
 │   └── main/
 │       └── style.css          # All the styling of the page
+├── screenshots/               # Screenshots used in this README
 ├── requirements.txt           # Required Python packages
 ├── .gitignore                 # Files Git should ignore
 └── README.md
-
+```
 
 ## Working
 
+```text
 User enters topic
         ↓
 HTML form sends POST request
@@ -59,5 +87,6 @@ Summary is returned
 Django sends result to HTML
         ↓
 Result is displayed on webpage
+```
 
 
