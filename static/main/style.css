@@ -103,14 +103,6 @@ body {
     color: #888888;
 }
 
-/* ---------- Footer ---------- */
-.footer {
-    margin-top: 25px;
-    font-size: 14px;
-    text-align: center;
-    color: #888888;
-}
-
 /* ---------- Small screens (mobile) ---------- */
 @media (max-width: 500px) {
     .search-form {

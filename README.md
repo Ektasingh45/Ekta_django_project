@@ -27,25 +27,25 @@ A simple web application built with Django where the user types a topic into a s
 
 The search page as it first loads.
 
-![Home page](screenshots/home.png)
+![Home page](screenshots/home_v2.png)
 
 ### Search Result
 
 Searching for "Taj Mahal" shows a 3-sentence summary from Wikipedia in a result card.
 
-![Search result](screenshots/result.png)
+![Search result](screenshots/result_v2.png)
 
 ### Error Message
 
 Searching for a topic that doesn't exist shows an error message.
 
-![Error message](screenshots/error.png)
+![Error message](screenshots/error_v2.png)
 
 ### Mobile View
 
 On small screens, the Search button moves below the text box.
 
-<img src="screenshots/mobile.png" alt="Mobile view" width="300">
+<img src="screenshots/mobile_v2.png" alt="Mobile view" width="300">
 
 ## Project Structure
 
